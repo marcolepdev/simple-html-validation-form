@@ -1,0 +1,115 @@
+/*  DOCUMENT AND BODY STRUCTURE */
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Lato;
+    background-image: url(https://blogdiprova2020.altervista.org/wp-content/uploads/2021/08/Elegant_Background-9.jpg);
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+
+/*  TITLE SECTION */
+
+
+h1, p {
+    text-align:center;
+    position: relative;
+    top:2.5rem;
+    padding-top:1.25rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+
+
+/*  FORM */
+
+
+
+.form-container {
+    margin-bottom: 20px;
+    border-radius: 5%;
+    height:140vh;
+    width:40%;
+    position: relative;
+    top:11vh;
+    margin:0 auto;
+    background-color: rgba(39, 38, 69, 0.8 );
+}
+/*  FORM MEDIA QUERIES */
+
+@media only screen and (max-width:700px) {
+   h1 {
+       font-size:1.40rem;
+   }
+   p {
+       font-size: 1.1rem;
+   }
+   .form-container {
+       
+    top:15vh;
+    width:95%;
+   }
+
+}
+
+
+
+#survey-form {
+    padding:30px;
+    top:20px;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+}
+label, ::placeholder {
+    font-size:18px;
+    padding:0;
+}
+
+#name, #email, #number  {
+    width:95%;
+    margin:10px 0 25px 0;
+    padding:10px;
+}
+
+#dropdown {
+    width:100%;
+    margin:15px 0 25px 0;
+    padding:10px;
+}
+
+
+input[type="checkbox"] {
+    margin:15px 0 15px 0;
+}
+
+
+textarea {
+
+    padding:10px;
+    margin:5px 0 15px 0;
+    width:100%;
+    height:30vh;
+}
+
+
+/*  SUBMIT BUTTON */
+
+#submit-button {
+    width:100%;
+    padding:10px;
+    margin:10px;
+    font-size: 18px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Validation form</title>
+</head>
+<body>
+
+    <!-- TITLE -->
+<h1>Welcome to my survey form template</h1>
+<p>Thank you for taking your time to visit my page</p>
+
+
+    <!-- FORM STRUCTURE -->
+
+<div class="form-container">
+<form id="survey-form" action="">
+
+
+        <!-- MAIN LABEL INPUTS -->
+
+    <label for="name">Name</label><br>
+    <input id="name" type="text" name="name" minlength="3" required placeholder="Mark White" pattern="[A-Za-z-0-9]+">
+    <label for="email">Email</label><br>
+    <input id="email" type="email" name="email" required placeholder="mark-white@gmail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+    <label for="number">Number</label><br>
+    <input id="number" size="6" min="5" max="18" step="2" type="number" name="number" required placeholder="+4367******" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}"/>
+    
+        <!-- SELECT OPTINS INPUTS -->
+    
+    <label for="age">Age (Choose an option)</label><br>
+    <select name="age" id="dropdown">
+        <option value="Choose an age range">Choose an age range</option>
+        <option value="0-18">0-18</option>
+        <option value="19-35">19-35</option>
+        <option value="36-50">36-50</option>
+        <option value="51-70">51-70</option>
+        <option value=">70">70+</option>
+    </select>
+
+
+    <!-- SECONDARY INPUT FIELDS -->
+
+    <label for="page">What do you like the most about this page?</label><br>
+    <input type="checkbox" value="Design">&nbsp<label for="Design">Design</label><br>
+    <input type="checkbox" value="Typography">&nbsp<label for="Typography">Typography</label><br>
+    <input type="checkbox" value="Responsiveness">&nbsp<label for="Responsiveness">Responsiveness</label><br>
+    <input type="checkbox" value="Other">&nbsp<label for="Other">Other</label><br>
+    <label id="comments" for="comment">Additional comments</label><br>
+    <textarea name="textarea" id="textarea" cols="50" rows="10">Please explain what you like the most about this page...</textarea>
+    
+        <!-- SUBMIT BUTTON -->
+        
+    <input id="submit-button"type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
